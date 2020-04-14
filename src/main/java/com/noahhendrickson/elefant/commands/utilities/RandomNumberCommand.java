@@ -20,13 +20,13 @@ public class RandomNumberCommand implements ICommand {
                 end = Integer.parseInt(bundle.getArgAt(0));
                 start = Integer.parseInt(bundle.getArgAt(1)) + 1;
             } catch (NumberFormatException e) {
-                bundle.sendMessage("Please supply a valid number!");
+                bundle.sendMessage("Please supply a valid integer!");
             }
         } else if (bundle.hasArgs()) {
             try {
                 end = Integer.parseInt(bundle.getArgAt(0));
             } catch (NumberFormatException e) {
-                bundle.sendMessage("Please supply a valid number!");
+                bundle.sendMessage("Please supply a valid integer!");
             }
         }
 
